@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Audiophile Shop - Speakers</title>
     <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/speakers.css">
+    <link rel="stylesheet" href="/css/products.css">
     <link rel="stylesheet" href="/css/home.css">
 </head>
 
@@ -81,100 +81,186 @@
                     </div>
                 </nav>
             </header>
-
-
-            <section class="speakers_section">
-                <div class="speakers_section_title">
-                    HEADPHONES
-                </div>
-            </section>
         </div>
 
 
         <div class="light">
-            <section class="speakers_section2">
-                <div class="speakers_section2_products">
-                    <div class="speakers_section2_item">
-                        <div class="speakers_section2_item_img">
+            <div class="backbtn" id="go_back">
+                Go Back
+            </div>
+            <section class="products_section2">
+                <div class="products_section2_products">
+                    <div class="products_section2_item">
+                        <div class="products_section2_item_img">
                             <picture>
                                 <source media="(min-width: 990px)"
-                                    srcset="/images/category-headphones/desktop/markone.jpg">
+                                    srcset="/images/product-xx99-mark-two-headphones/desktop/image-product.jpg">
                                 <source media="(min-width: 480px)"
-                                    srcset="/images/category-headphones/tablet/image-xx59.jpg">
+                                    srcset="/images/product-xx99-mark-two-headphones/tablet/image-product.jpg">
                                 <img alt="ZX9 Speaker" class="chakra-image css-1pz0uuv"
-                                    src="/images/category-headphones/mobile/image-xx59.jpg">
+                                    src="/images/product-xx99-mark-two-headphones/mobile/image-product.jpg">
                             </picture>
                         </div>
-                        <div class="speakers_section2_item_info">
-                            <div class="speakers_section2_item_info_new">
+                        <div class="products_section2_item_info">
+                            <div class="products_section2_item_info_new">
                                 NEW PRODUCT
                             </div>
-                            <div class="speakers_section2_item_info_title">
+                            <div class="products_section2_item_info_title">
                                 XX99 MARK II HEADPHONES
                             </div>
-                            <div class="speakers_section2_item_info_desc">
+                            <div class="products_section2_item_info_desc">
                                 The new XX99 Mark II headphones is the pinnacle of pristine audio. It redefines your
                                 premium headphone experience by reproducing the balanced depth and precision of
                                 studio-quality sound.
                             </div>
-                            <a class="speakers_section2_item_info_btn" href="/html/products/headphones/XX99_MARK_II_HEADPHONES.html">
-                                SEE PRODUCTS
-                            </a>
+                            <div class="products_section2_item_info_price">
+                                $ 2,999
+                            </div>
+                            <div class="products_section2_item_info_cart">
+                                <div class="products_section2_item_info_quantity">
+                                    <div class="products_section2_item_info_quantity_sub" onclick="control_quantity(1)">
+                                        -</div>
+                                    <div class="products_section2_item_info_quantity_num" id="quantity">1</div>
+                                    <div class="products_section2_item_info_quantity_add" onclick="control_quantity(2)">
+                                        +</div>
+                                </div>
+                                <div class="products_section2_item_info_btn" onclick="add_to_cart(1,parseInt(quantity.innerText))">
+                                    ADD TO CART
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="speakers_section2_item">
-                        <div class="speakers_section2_item_img_odd">
-                            <picture>
-                                <source media="(min-width: 990px)"
-                                    srcset="/images/category-headphones/desktop/marktwo.jpg">
-                                <source media="(min-width: 480px)"
-                                    srcset="/images/category-headphones/tablet/image-xx99-mark-one.jpg"><img
-                                    alt="ZX7 Speaker" src="/images/category-headphones/mobile/image-xx99-mark-one.jpg">
-                            </picture>
+                </div>
+            </section>
+
+            <section class="products_section3">
+                <div class="products_section3_features_inthe_box">
+                    <div class="products_section3_features">
+                        <div class="products_section3_features_title">
+                            FEATURES
                         </div>
-                        <div class="speakers_section2_item_info">
-                            <!-- <div class="speakers_section2_item_info_new">
-                                NEW PRODUCT
-                            </div> -->
-                            <div class="speakers_section2_item_info_title">
-                                XX99 MARK I HEADPHONES
-                            </div>
-                            <div class="speakers_section2_item_info_desc">
-                                As the gold standard for headphones, the classic XX99 Mark I offers detailed and
-                                accurate audio reproduction for audiophiles, mixing engineers, and music aficionados
-                                alike in studios and on the go.
-                            </div>
-                            <a class="speakers_section2_item_info_btn" href="/html/products/headphones/XX99_MARK_I_HEADPHONES.html">
-                                SEE PRODUCTS
-                            </a>
+                        <div class="products_section3_features_desc">
+                            <p>Featuring a genuine leather head strap and premium earcups, these headphones deliver
+                                superior comfort for those who like to enjoy endless listening. It includes intuitive
+                                controls designed for any situation. Whether you’re taking a business call or just in
+                                your own personal space, the auto on/off and pause features ensure that you’ll never
+                                miss a
+                                beat.</p>
+
+
+                            <p>The advanced Active Noise Cancellation with built-in equalizer allow you to experience
+                                your audio world on your terms. It lets you enjoy your audio in peace, but quickly
+                                interact
+                                with your surroundings when you need to. Combined with Bluetooth 5. 0 compliant
+                                connectivity and 17 hour battery life, the XX99 Mark II headphones gives you superior
+                                sound, cutting-edge technology, and a modern design aesthetic.</p>
                         </div>
                     </div>
-                    <div class="speakers_section2_item">
-                        <div class="speakers_section2_item_img">
-                            <picture>
-                                <source media="(min-width: 990px)"
-                                    srcset="/images/category-headphones/desktop/markthree.jpg">
-                                <source media="(min-width: 480px)"
-                                    srcset="/images/category-headphones/tablet/image-xx99-mark-two.jpg">
-                                <img alt="ZX9 Speaker" class="chakra-image css-1pz0uuv"
-                                    src="/images/category-headphones/mobile/image-xx99-mark-two.jpg">
-                            </picture>
+                    <div class="products_section3_inthe_box">
+                        <div class="products_section3_inthe_box_title">
+                            IN THE BOX
                         </div>
-                        <div class="speakers_section2_item_info">
-                            <!-- <div class="speakers_section2_item_info_new">
-                                NEW PRODUCT
-                            </div> -->
-                            <div class="speakers_section2_item_info_title">
-                                XX59 HEADPHONES
+                        <div class="products_section3_inthe_box_desc">
+                            <p><span>1x</span> Headphone Unit</p>
+                            <p><span>2x</span> Replacement Earcups</p>
+                            <p><span>1x</span> User Manual</p>
+                            <p><span>1x</span> 3.5mm 5m Audio Cable</p>
+                            <p><span>1x</span> Travel Bag</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="products_section4">
+                <div class="products_section4_images">
+                    <div class="products_section4_images_2">
+                        <picture>
+                            <source media="(min-width: 990px)"
+                                srcset="/images/product-xx99-mark-two-headphones/desktop/image-gallery-1.jpg">
+                            <source media="(min-width: 480px)"
+                                srcset="/images/product-xx99-mark-two-headphones/tablet/image-gallery-1.jpg"><img alt=""
+                                src="/images/product-xx99-mark-two-headphones/mobile/image-gallery-1.jpg">
+                        </picture>
+                        <picture>
+                            <source media="(min-width: 990px)"
+                                srcset="/images/product-xx99-mark-two-headphones/desktop/image-gallery-2.jpg">
+                            <source media="(min-width: 480px)"
+                                srcset="/images/product-xx99-mark-two-headphones/tablet/image-gallery-2.jpg"><img alt=""
+                                src="/images/product-xx99-mark-two-headphones/mobile/image-gallery-2.jpg">
+                        </picture>
+                    </div>
+                    <div class="products_section4_images_1">
+                        <picture>
+                            <source media="(min-width: 990px)"
+                                srcset="/images/product-xx99-mark-two-headphones/desktop/image-gallery-3.jpg">
+                            <source media="(min-width: 480px)"
+                                srcset="/images/product-xx99-mark-two-headphones/tablet/image-gallery-3.jpg"><img alt=""
+                                class="chakra-image css-rsugo2"
+                                src="/images/product-xx99-mark-two-headphones/mobile/image-gallery-3.jpg">
+                        </picture>
+                    </div>
+                </div>
+            </section>
+
+            <section class="products_section5">
+                <div class="products_section5_youmaylike">
+                    <div class="products_section5_youmaylike_title">
+                        YOU MAY ALSO LIKE
+                    </div>
+                    <div class="products_section5_youmaylike_products">
+                        <div class="products_section5_youmaylike_products_item">
+                            <div class="products_section5_youmaylike_products_item_img">
+                                <picture class="css-0">
+                                    <source media="(min-width: 62em)"
+                                        srcset="/images/shared/desktop/image-xx99-mark-one-headphones.jpg">
+                                    <source media="(min-width: 48em)"
+                                        srcset="/images/shared/tablet/image-xx99-mark-one-headphones.jpg"><img
+                                        alt="XX99 Mark I" class="chakra-image css-1pz0uuv"
+                                        src="/images/shared/mobile/image-xx99-mark-one-headphones.jpg">
+                                </picture>
                             </div>
-                            <div class="speakers_section2_item_info_desc">
-                                Enjoy your audio almost anywhere and customize it to your specific tastes with the XX59
-                                headphones. The stylish yet durable versatile wireless headset is a brilliant companion
-                                at home or on the move.
+                            <div class="products_section5_youmaylike_products_item_name">
+                                XX99 MARK I
                             </div>
-                            <a class="speakers_section2_item_info_btn" href="/html/products/headphones/XX59_HEADPHONES.html">
-                                SEE PRODUCTS
-                            </a>
+                            <div class="products_section5_youmaylike_products_item_btn">
+                                SEE PRODUCT
+                            </div>
+                        </div>
+                        <div class="products_section5_youmaylike_products_item">
+                            <div class="products_section5_youmaylike_products_item_img">
+                                <picture class="css-0">
+                                    <source media="(min-width: 62em)"
+                                        srcset="/images/shared/desktop/image-xx59-headphones.jpg">
+                                    <source media="(min-width: 48em)"
+                                        srcset="/images/shared/tablet/image-xx59-headphones.jpg"><img alt="XX59"
+                                        class="chakra-image css-1pz0uuv"
+                                        src="/images/shared/mobile/image-xx59-headphones.jpg">
+                                </picture>
+                            </div>
+                            <div class="products_section5_youmaylike_products_item_name">
+                                XX59
+                            </div>
+                            <div class="products_section5_youmaylike_products_item_btn">
+                                SEE PRODUCT
+                            </div>
+                        </div>
+                        <div class="products_section5_youmaylike_products_item">
+                            <div class="products_section5_youmaylike_products_item_img">
+                                <picture class="css-0">
+                                    <source media="(min-width: 62em)"
+                                        srcset="/images/shared/desktop/image-zx9-speaker.jpg">
+                                    <source media="(min-width: 48em)"
+                                        srcset="/images/shared/tablet/image-zx9-speaker.jpg"><img alt="ZX9 Speaker"
+                                        class="chakra-image css-1pz0uuv"
+                                        src="/images/shared/mobile/image-zx9-speaker.jpg">
+                                </picture>
+                            </div>
+                            <div class="products_section5_youmaylike_products_item_name">
+                                ZX9 SPEAKER
+                            </div>
+                            <div class="products_section5_youmaylike_products_item_btn">
+                                SEE PRODUCT
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -290,5 +376,28 @@
 <script src="/javascript/index.js"></script>
 <script src="/javascript/menu.js"></script>
 <script src="/javascript/cart.js"></script>
+<script src="/javascript/add_to_cart.js"></script>
+<script>
+    let quantity = document.getElementById("quantity")
+    let go_back = document.getElementById("go_back")
+    function control_quantity(num) {
+        if (num === 1) {
+            if (parseInt(quantity.innerText) >= 2) {
+                quantity.innerText = parseInt(quantity.innerText) - 1;
+            }
+        } else {
+            if (parseInt(quantity.innerText) <= 9) {
+                quantity.innerText = parseInt(quantity.innerText) + 1;
+            }
+        }
+    }
+    go_back.addEventListener("click",()=>{
+        var preUrl = document.referrer;
+        if (preUrl == null)
+            return "The previous page url is empty";
+        else
+            window.open(preUrl,"_self")
+    })
+</script>
 
 </html>
