@@ -46,9 +46,43 @@ function switch_item(id, quantity) {
 
             localStorage.setItem("all_items", JSON.stringify(items_cart))
             break;
+        case 4:
+            items_cart.push({
+                id: id,
+                title: "ZX9",
+                price: "$ 4,500",
+                quantity: quantity,
+                img : "/images/cart/image-zx9-speaker.jpg"
+            });
+
+            localStorage.setItem("all_items", JSON.stringify(items_cart))
+            break;
+        case 5:
+            items_cart.push({
+                id: id,
+                title: "ZX7",
+                price: "$ 3,500",
+                quantity: quantity,
+                img : "/images/cart/image-zx7-speaker.jpg"
+            });
+
+            localStorage.setItem("all_items", JSON.stringify(items_cart))
+            break;
+        case 6:
+            items_cart.push({
+                id: id,
+                title: "YX1",
+                price: "$ 599",
+                quantity: quantity,
+                img : "/images/cart/image-yx1-earphones.jpg"
+            });
+
+            localStorage.setItem("all_items", JSON.stringify(items_cart))
+            break;
         default:
             break;
     }
+    header_cart_loader();
 }
 
 

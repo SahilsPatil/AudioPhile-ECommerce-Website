@@ -7,10 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Audiophile Shop - Speakers</title>
     <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/speakers.css">
-    <link rel="stylesheet" href="/css/home.css">
     <link rel="stylesheet" href="/css/products.css">
-
+    <link rel="stylesheet" href="/css/home.css">
 </head>
 
 <body>
@@ -36,8 +34,8 @@
                     <div class="header_menus">
                         <a class="menu" href="/">HOME</a>
                         <a class="menu" href="/html/headphones.html">HEADPHONES</a>
-                        <a class="menu" href="/html/speakers.html">SPEAKERS</a>
-                        <a class="menu active" href="/html/earthphones.html">EARTHPHONES </a>
+                        <a class="menu active" href="/html/speakers.html">SPEAKERS</a>
+                        <a class="menu" href="/html/earthphones.html">EARTHPHONES </a>
                     </div>
                     <div class="header_cart" id="header_cart">
                         <img src="/images/cart.svg" alt="">
@@ -45,7 +43,7 @@
                     <div class="mobile_menu" id="mobile_menu">
                         <div class="mobile_menu_background">
                             <section class="section2 mobile_section2">
-                                <a class="section2_item"  href="/html/headphones.html">
+                                <a class="section2_item" href="/html/headphones.html">
                                     <div class="section2_item_img">
                                         <img src="/images/image-headphones.png" alt="">
                                     </div>
@@ -67,7 +65,7 @@
                                         SHOP <img src="/images/icon-arrow-right.svg" alt="">
                                     </div>
                                 </a>
-                                <a class="section2_item"  href="/html/earthphones.html">
+                                <a class="section2_item" href="/html/earthphones.html">
                                     <div class="section2_item_img">
                                         <img src="/images/image-earphones.png" alt="">
                                     </div>
@@ -83,74 +81,179 @@
                     </div>
                 </nav>
             </header>
-
-
-            <section class="speakers_section">
-                <div class="speakers_section_title">
-                    EARPHONES
-                </div>
-            </section>
         </div>
 
 
         <div class="light">
-            <section class="speakers_section2">
-                <div class="speakers_section2_products">
-                    <div class="speakers_section2_item">
-                        <div class="speakers_section2_item_img">
+            <div class="backbtn" id="go_back">
+                Go Back
+            </div>
+            <section class="products_section2">
+                <div class="products_section2_products">
+                    <div class="products_section2_item">
+                        <div class="products_section2_item_img">
                             <picture>
                                 <source media="(min-width: 990px)"
-                                    srcset="/images/category-earphones/desktop/earphoneDesktop.jpg">
+                                    srcset="/images/product-zx9-speaker/desktop/image-product.jpg">
                                 <source media="(min-width: 480px)"
-                                    srcset="/images/category-earphones/tablet/image-yx1-earphones.jpg">
-                                <img alt="ZX9 Speaker" class="chakra-image css-1pz0uuv"
-                                    src="/images/category-earphones/mobile/image-yx1-earphones.jpg">
+                                    srcset="/images/product-zx9-speaker/tablet/image-product.jpg"><img
+                                    alt="XX99 Mark I Headphones" class="chakra-image css-1pz0uuv"
+                                    src="/images/product-zx9-speaker/mobile/image-product.jpg">
                             </picture>
                         </div>
-                        <div class="speakers_section2_item_info">
-                            <div class="speakers_section2_item_info_new">
+                        <div class="products_section2_item_info">
+                            <!-- <div class="products_section2_item_info_new">
                                 NEW PRODUCT
+                            </div> -->
+                            <div class="products_section2_item_info_title">
+                                ZX9 SPEAKER
                             </div>
-                            <div class="speakers_section2_item_info_title">
-                                YX1 WIRELESS EARPHONES
+                            <div class="products_section2_item_info_desc">
+                                Upgrade your sound system with the all new ZX9 active speaker. It’s a bookshelf speaker system that offers truly wireless connectivity -- creating new possibilities for more pleasing and practical audio setups.
                             </div>
-                            <div class="speakers_section2_item_info_desc">
-                                Tailor your listening experience with bespoke dynamic drivers from the new YX1 Wireless
-                                Earphones. Enjoy incredible high-fidelity sound even in noisy environments with its
-                                active noise cancellation feature.
+                            <div class="products_section2_item_info_price">
+                                $ 4,500
                             </div>
-                            <a href="/html/products/earthphones/YX1_WIRELESS_EARPHONES.html" class="speakers_section2_item_info_btn">
-                                SEE PRODUCTS
-                            </a>
+                            <div class="products_section2_item_info_cart">
+                                <div class="products_section2_item_info_quantity">
+                                    <div class="products_section2_item_info_quantity_sub" onclick="control_quantity(1)">
+                                        -</div>
+                                    <div class="products_section2_item_info_quantity_num" id="quantity">1</div>
+                                    <div class="products_section2_item_info_quantity_add" onclick="control_quantity(2)">
+                                        +</div>
+                                </div>
+                                <div class="products_section2_item_info_btn"
+                                    onclick="add_to_cart(4,parseInt(quantity.innerText))">
+                                    ADD TO CART
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <!-- <div class="speakers_section2_item">
-                        <div class="speakers_section2_item_img_odd">
-                            <picture>
-                                <source media="(min-width: 990px)"
-                                    srcset="/images/category-speakers/desktop/image-zx7.jpg">
-                                <source media="(min-width: 480px)"
-                                    srcset="/images/category-speakers/tablet/image-zx7.jpg"><img alt="ZX7 Speaker"
-                                    src="/images/category-speakers/mobile/image-zx7.jpg">
-                            </picture>
+                </div>
+            </section>
+
+            <section class="products_section3">
+                <div class="products_section3_features_inthe_box">
+                    <div class="products_section3_features">
+                        <div class="products_section3_features_title">
+                            FEATURES
                         </div>
-                        <div class="speakers_section2_item_info">
-                            <div class="speakers_section2_item_info_new">
-                                NEW PRODUCT
+                        <div class="products_section3_features_desc">
+                            <p>Connect via Bluetooth or nearly any wired source. This speaker features optical, digital coaxial, USB Type-B, stereo RCA, and stereo XLR inputs, allowing you to have up to five wired source devices connected for easy switching. Improved bluetooth technology offers near lossless audio quality at up to 328ft (100m).</p>
+
+
+                            <p>Discover clear, more natural sounding highs than the competition with ZX9’s signature planar diaphragm tweeter. Equally important is its powerful room-shaking bass courtesy of a 6.5” aluminum alloy bass unit. You’ll be able to enjoy equal sound quality whether in a large room or small den. Furthermore, you will experience new sensations from old songs since it can respond to even the subtle waveforms.</p>
+                        </div>
+                    </div>
+                    <div class="products_section3_inthe_box">
+                        <div class="products_section3_inthe_box_title">
+                            IN THE BOX
+                        </div>
+                        <div class="products_section3_inthe_box_desc">
+                            <p><span>2x</span> Speaker Unit</p>
+                            <p><span>2x</span> Speaker Cloth Panel</p>
+                            <p><span>1x</span> User Manual</p>
+                            <p><span>1x</span> 3.5mm 10m Audio Cable</p>
+                            <p><span>1x</span> 10m Optical Cable</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="products_section4">
+                <div class="products_section4_images">
+                    <div class="products_section4_images_2">
+                        <picture class="css-abwd1v">
+                            <source media="(min-width: 62em)"
+                                srcset="/images/product-zx9-speaker/desktop/image-gallery-1.jpg">
+                            <source media="(min-width: 30em)"
+                                srcset="/images/product-zx9-speaker/tablet/image-gallery-1.jpg"><img alt=""
+                                class="chakra-image css-rsugo2"
+                                src="/images/product-zx9-speaker/mobile/image-gallery-1.jpg">
+                        </picture>
+                        <picture class="css-1dcep75">
+                            <source media="(min-width: 62em)"
+                                srcset="/images/product-zx9-speaker/desktop/image-gallery-2.jpg">
+                            <source media="(min-width: 30em)"
+                                srcset="/images/product-zx9-speaker/tablet/image-gallery-2.jpg"><img
+                                class="chakra-image css-rsugo2"
+                                src="/images/product-zx9-speaker/mobile/image-gallery-2.jpg">
+                        </picture>
+                    </div>
+                    <div class="products_section4_images_1">
+                        <picture class="css-zwofjs">
+                            <source media="(min-width: 62em)"
+                                srcset="/images/product-zx9-speaker/desktop/image-gallery-3.jpg">
+                            <source media="(min-width: 30em)"
+                                srcset="/images/product-zx9-speaker/tablet/image-gallery-3.jpg"><img
+                                class="chakra-image css-rsugo2"
+                                src="/images/product-zx9-speaker/mobile/image-gallery-3.jpg">
+                        </picture>
+                    </div>
+                </div>
+            </section>
+
+            <section class="products_section5">
+                <div class="products_section5_youmaylike">
+                    <div class="products_section5_youmaylike_title">
+                        YOU MAY ALSO LIKE
+                    </div>
+                    <div class="products_section5_youmaylike_products">
+                        <div class="products_section5_youmaylike_products_item">
+                            <div class="products_section5_youmaylike_products_item_img">
+                                <picture class="css-0">
+                                    <source media="(min-width: 62em)"
+                                        srcset="/images/shared/desktop/image-xx99-mark-two-headphones.jpg">
+                                    <source media="(min-width: 48em)"
+                                        srcset="/images/shared/tablet/image-xx99-mark-two-headphones.jpg"><img
+                                        alt="XX99 MK II" class="chakra-image css-1pz0uuv"
+                                        src="/images/shared/mobile/image-xx99-mark-two-headphones.jpg">
+                                </picture>
                             </div>
-                            <div class="speakers_section2_item_info_title">
-                                ZX7 SPEAKER
+                            <div class="products_section5_youmaylike_products_item_name">
+                                XX99 MARK II
                             </div>
-                            <div class="speakers_section2_item_info_desc">
-                                Stream high quality sound wirelessly with minimal to no loss. The ZX7 speaker uses
-                                high-end audiophile components that represents the top of the line powered speakers for
-                                home or studio use.
-                            </div>
-                            <div class="speakers_section2_item_info_btn">
-                                SEE PRODUCTS
+                            <div class="products_section5_youmaylike_products_item_btn">
+                                SEE PRODUCT
                             </div>
                         </div>
-                    </div> -->
+                        <div class="products_section5_youmaylike_products_item">
+                            <div class="products_section5_youmaylike_products_item_img">
+                                <picture class="css-0">
+                                    <source media="(min-width: 62em)"
+                                        srcset="/images/shared/desktop/image-xx59-headphones.jpg">
+                                    <source media="(min-width: 48em)"
+                                        srcset="/images/shared/tablet/image-xx59-headphones.jpg"><img alt="XX59"
+                                        class="chakra-image css-1pz0uuv"
+                                        src="/images/shared/mobile/image-xx59-headphones.jpg">
+                                </picture>
+                            </div>
+                            <div class="products_section5_youmaylike_products_item_name">
+                                XX59
+                            </div>
+                            <div class="products_section5_youmaylike_products_item_btn">
+                                SEE PRODUCT
+                            </div>
+                        </div>
+                        <div class="products_section5_youmaylike_products_item">
+                            <div class="products_section5_youmaylike_products_item_img">
+                                <picture class="css-0">
+                                    <source media="(min-width: 62em)"
+                                        srcset="/images/shared/desktop/image-zx9-speaker.jpg">
+                                    <source media="(min-width: 48em)"
+                                        srcset="/images/shared/tablet/image-zx9-speaker.jpg"><img alt="ZX9 Speaker"
+                                        class="chakra-image css-1pz0uuv"
+                                        src="/images/shared/mobile/image-zx9-speaker.jpg">
+                                </picture>
+                            </div>
+                            <div class="products_section5_youmaylike_products_item_name">
+                                ZX9 SPEAKER
+                            </div>
+                            <div class="products_section5_youmaylike_products_item_btn">
+                                SEE PRODUCT
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
 
@@ -263,7 +366,29 @@
 </body>
 <script src="/javascript/index.js"></script>
 <script src="/javascript/menu.js"></script>
-<script src="/javascript/add_to_cart.js"></script>
 <script src="/javascript/cart.js"></script>
+<script src="/javascript/add_to_cart.js"></script>
+<script>
+    let quantity = document.getElementById("quantity")
+    let go_back = document.getElementById("go_back")
+    function control_quantity(num) {
+        if (num === 1) {
+            if (parseInt(quantity.innerText) >= 2) {
+                quantity.innerText = parseInt(quantity.innerText) - 1;
+            }
+        } else {
+            if (parseInt(quantity.innerText) <= 9) {
+                quantity.innerText = parseInt(quantity.innerText) + 1;
+            }
+        }
+    }
+    go_back.addEventListener("click", () => {
+        var preUrl = document.referrer;
+        if (preUrl == null)
+            return "The previous page url is empty";
+        else
+            window.open(preUrl, "_self")
+    })
+</script>
 
 </html>

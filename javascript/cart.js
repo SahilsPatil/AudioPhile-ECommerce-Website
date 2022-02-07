@@ -9,6 +9,7 @@ header_cart_loader()
 
 
 function header_cart_loader() {
+    create_setup();
     if (all_items == null) {
         header_cart.innerHTML = `<img src="/images/cart.svg" alt="">`
     }
@@ -61,9 +62,9 @@ function add_product_html() {
                 ${count_total()}
             </div>
         </div>
-        <div class="header_cart_section_background_details_checkout">
+        <a class="header_cart_section_background_details_checkout" href="/html/checkout.html">
             CHECKOUT
-        </div>
+        </a>
     </div>`
 
     for (const e of items_cart) {
@@ -99,17 +100,36 @@ function add_html() {
     create_setup()
     header_cart_loader()
 
-    if (all_items == null) { add_empty_html() }
-    else { add_product_html() }
+    if (all_items == null) {
+        add_empty_html()
 
-    if (!header_cart_is_open) {
-        header_cart_section_background.style.opacity = 1;
-        header_cart_section_background.style.zIndex = 2;
-        header_cart_section2.style.opacity = 1;
-        header_cart_section2.style.zIndex = 2;
-        document.body.style.overflowY = "hidden";
-        header_cart_is_open = true;
+        if (!header_cart_is_open) {
+            header_cart_section_background.style.opacity = 1;
+            header_cart_section_background.style.zIndex = 2;
+            header_cart_section_background.style.maxHeight = 138+ "px";
+            header_cart_section_background.style.overflowY = "hidden"
+            header_cart_section2.style.opacity = 1;
+            header_cart_section2.style.zIndex = 2;
+            document.body.style.overflowY = "hidden";
+            header_cart_is_open = true;
+        }
     }
+    else {
+        add_product_html()
+
+        if (!header_cart_is_open) {
+            header_cart_section_background.style.opacity = 1;
+            header_cart_section_background.style.zIndex = 2;
+            header_cart_section_background.style.maxHeight = innerHeight - 300 + "px";
+            header_cart_section_background.style.overflowY = "scroll"
+            header_cart_section2.style.opacity = 1;
+            header_cart_section2.style.zIndex = 2;
+            document.body.style.overflowY = "hidden";
+            header_cart_is_open = true;
+        }
+    }
+
+
 
 }
 
@@ -126,6 +146,8 @@ header_cart_section2.addEventListener("click", () => {
     if (header_cart_is_open) {
         header_cart_section2.style.opacity = -1;
         header_cart_section2.style.zIndex = -2;
+        header_cart_section_background.style.maxHeight = "138px";
+        header_cart_section_background.style.overflowY = "hidden"
         header_cart_section_background.style.opacity = -1;
         header_cart_section_background.style.zIndex = -2;
         document.body.style.overflowY = "visible";
@@ -172,4 +194,5 @@ function cart_quantity(htmlid, num, id) {
         }
     }
     add_html()
+    checkout_summery_loader()
 }
