@@ -2,6 +2,7 @@
     color: #b1b1b1;
     font-weight: 600;
 }
+
 .form{
     max-width: 1200px;
     padding:0 24px;
@@ -262,9 +263,118 @@ input[type='radio']:checked::after{
     font-size: 13px;
     padding:14px 0;
     letter-spacing: 1px;
-    cursor: pointer;
+    cursor: pointer; 
+    border: none;
 }
 
+.check_email{
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: #0000007a;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    overflow-y: scroll;
+}
+.check_email_main{
+    /* top: 0;
+    left: 0;
+    right: 0; */
+    background-color: white;
+    border-radius: 8px;
+    width: 80%;
+    margin: auto;
+    margin-top: 80px;
+    margin-bottom: 40px;
+    /* margin-top:62px; */
+    padding: 48px;
+    z-index: 3;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    max-width: 460px;
+    width: 70%;
+}
+.check_email_main_img{
+    margin-bottom: 24px;
+}
+.check_email_main_thanks{
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 24px;
+    line-height: 1.125;
+    color: #191919;
+}
+.check_email_main_email{
+    font-size: 15px;
+    margin-bottom: 32px;
+    color: #00000080;
+}
+.check_email_main_items_total_box{
+    margin-bottom: 48px;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    border-radius: 8px;
+    width: 100%;
+}
+.check_email_main_items_box{
+    background-color: #f1f1f1;
+    align-items: center;
+    width: 60%;
+    padding: 24px;
+    padding-bottom: 0%;
+    border-radius: 8px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.check_email_main_total_box{
+    padding: 42px 32px;
+    background-color: #191919;
+    color: #FFFFFF;
+    width: 40%;
+    border-radius: 8px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    font-weight: 700;
+    font-size: 15px;
+}
+.check_email_main_total_box_name{
+    color: #FFFFFF80;
+    margin-bottom: 8px;
+    font-size: 15px;
+    font-weight: 400;
+}
+.check_email_main_items_box_other{
+    padding: 16px;
+    color: #00000080;
+    font-size: 12px;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+.check_email_main_items_box_other:hover{
+    text-decoration: underline;
+}
+.check_email_main_back_btn{
+    font-size: 13px;
+    padding: 14px 32px;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #D87D4A;
+    font-weight: 700;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+.check_email_main_back_btn:hover{
+   background-color: #fbaf85;
+}
 
 
 
@@ -324,6 +434,43 @@ input[type='radio']:checked::after{
 
 
 
+@media (max-width:770px){
+    .check_email_main{
+        max-width: 360px;
+        width: 90%;
+        margin: 60px 24px;
+        padding: 32px;
+    }
+    .check_email_main_email{
+        margin-bottom: 22px;
+    }
+    .check_email_main_items_total_box{
+        flex-direction: column;
+        border-radius: 8px;
+        width: 100%;
+    }
+    .check_email_main_items_total_box{
+        margin-bottom: 24px;
+    }
+    .check_email_main_items_box{
+        width: unset;
+        border-radius: 8px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    .check_email_main_total_box{
+        width: unset;
+        border-radius: 8px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        padding: 18px 24px;
+    }
+    .check_email_main_back_btn{
+        padding: 14px 20px;
+    }
+}
+
+
 
 @media (max-width:480px){
     .form_checkout_billing_namefield{
@@ -349,5 +496,12 @@ input[type='radio']:checked::after{
     }
     .form_checkout_payment_type{
         width: 97%;
+    }
+    .check_email_main_thanks{
+        font-size: 24px;
+    }
+    .form_checkout_billing_namefield_long_output{
+        display: flex;
+        flex-direction:column ;
     }
 }

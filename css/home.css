@@ -30,6 +30,7 @@
     margin-bottom: 40px;
     font-weight: 400;
     line-height: 1.7;
+    max-width: 337px;
 }
 .section_left_button{
     font-size: 13px;
@@ -406,11 +407,17 @@
 
 @media (max-width:480px){
     .section_left{
-        transform:scale(0.7);
+        /* transform:scale(0.7); */
+    }
+    .section_left_title{
+        font-size: 36px;
     }
     .section_right{
         width: 800px !important;
         margin: 20px 0;
+    }
+    .section_right img{
+       width: 120vw;
     }
    .section_left_title{
        width: 95%;
@@ -507,9 +514,9 @@
         line-height: 1.66;
     }
 }
-@media (max-width:291px){
+/* @media (max-width:291px){
     .section_left_title{
         width: 100%;
         font-size: 50px;
     }
-}
+} */

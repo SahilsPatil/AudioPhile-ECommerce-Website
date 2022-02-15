@@ -1,5 +1,5 @@
-// let form_summer_btn = document.getElementById("form_summer_btn")
 let upi = document.getElementById("upi")
+
 
 items_cart = [];
 all_items = localStorage.getItem("all_items");
@@ -40,9 +40,9 @@ function checkout_summery_loader() {
             ₹${count_total() + 50}
         </div>
     </div>
-    <div class="form_summer_btn" id="form_summer_btn">
-        CONTINUE & PAY
-    </div>
+    <input type="submit" value="CONTINUE & PAY" class="form_summer_btn" id="form_summer_btn">
+<!--        CONTINUE & PAY
+    </input>-->
     `
 
     for (const e of items_cart) {
@@ -118,3 +118,117 @@ function getValue(radio) {
         `
     }
 }
+
+function check_email_main_items_box_other() {
+    check_email_main_items_box.innerHTML = ``;
+    for (const e of items_cart) {
+        check_email_main_items_box.innerHTML += `
+        <div class="form_summer_products_item">
+            <div class="form_summer_products_item_img_info">
+                <div class="form_summer_products_item_img">
+                    <img src="${e.img}" alt="">
+                </div>
+                <div class="form_summer_products_item_name_price">
+                    <div class="form_summer_products_item_name">
+                    ${e.title}
+                    </div>
+                    <div class="form_summer_products_item_price">
+                    ${e.price}
+                    </div>
+                </div>
+            </div>
+            <div class="form_summer_products_item_quantity">
+                x${e.quantity}
+            </div>
+        </div>
+        `
+    }
+    check_email_main_items_box.innerHTML += `
+    <div class="check_email_main_items_box_other" onclick="check_email_page_loader()">
+            View less
+        </div>
+    `
+}
+
+function check_email_page_loader() {
+
+    document.body.style.overflow = "hidden"
+    check_email.style.display = "flex";
+    check_email.innerHTML =
+        `
+        <div class="check_email_main" >
+            <div class="check_email_main_img">
+                <img src="/images/shared/desktop/icon-check-mark.svg" alt="">
+            </div>
+            <div class="check_email_main_thanks">
+                THANK YOU<br>
+                FOR YOUR ORDER
+            </div>
+            <div class="check_email_main_email">
+                You will receive an email confirmation shortly.
+            </div>
+            <div class="check_email_main_items_total_box">
+                <div class="check_email_main_items_box" id="check_email_main_items_box">
+                    
+                </div>
+                <div class="check_email_main_total_box">
+                    <div class="check_email_main_total_box_name">
+                        GRAND TOTAL
+                    </div>
+                    <div class="check_email_main_total_box_num">
+                    ₹${count_total() + 50}
+                    </div>
+                </div>
+            </div>
+            <div class="check_email_main_back_btn" onclick="check_email_main_back_btn()">
+                BACK TO HOME
+            </div>
+        </div>
+    `
+
+    check_email_main_items_box.innerHTML = `
+    <div class="form_summer_products_item">
+        <div class="form_summer_products_item_img_info">
+            <div class="form_summer_products_item_img">
+                <img src="${items_cart[0].img}" alt="">
+            </div>
+            <div class="form_summer_products_item_name_price">
+                <div class="form_summer_products_item_name">
+                ${items_cart[0].title}
+                </div>
+                <div class="form_summer_products_item_price">
+                ${items_cart[0].price}
+                </div>
+            </div>
+        </div>
+        <div class="form_summer_products_item_quantity">
+            x${items_cart[0].quantity}
+        </div>
+    </div>
+    `
+    if (items_cart.length > 1) {
+        check_email_main_items_box.innerHTML += `
+        <div class="check_email_main_items_box_other" onclick="check_email_main_items_box_other()">
+            and ${items_cart.length - 1} other item(s)
+        </div>
+        `
+    }
+
+}
+
+function check_email_main_back_btn() {
+    create_setup()
+    localStorage.clear()
+    items_cart = [];
+    form.reset()
+    header_cart_loader();
+    checkout_summery_loader()
+    document.location.href = '../../'
+}
+
+
+form.addEventListener("submit", (e) => {
+    e.preventDefault()
+    create_setup()
+    check_email_page_loader()
+})

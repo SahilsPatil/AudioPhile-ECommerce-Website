@@ -59,6 +59,9 @@ a{
     display: none;
     cursor: pointer;
 }
+.header_icon img{
+    width: 200px;
+}
 .header_menus{
     display: flex;
     justify-content: space-between;
@@ -419,6 +422,9 @@ a{
         right: 0;
         left: 50%;
         transform:translateX(-50%);
+    }
+    .header_icon img{
+        width: 150px;
     }
     .section2{
         flex-direction: column;
