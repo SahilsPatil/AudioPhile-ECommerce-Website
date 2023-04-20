@@ -1,4 +1,3 @@
-[Click To View](https://audiophile-eommerce-site-fronendmentor-challange.netlify.app/)
 
 # AudioPhile E-Commerce Website 🎧
 
@@ -20,14 +19,14 @@ This is a front-end e-commerce website for audio-related products, built using H
 
 ## Preview 👀
 
-Here's a [link to the live website](https://yourwebsite.com) where you can see the AudioPhile E-Commerce website in action!
+Here's a [link to the live website](https://audiophile-eommerce-site-fronendmentor-challange.netlify.app/) where you can see the AudioPhile E-Commerce website in action!
 
 ## Setup Instructions 🛠️
 
 1. Clone the repository:
 
    ```bash
-   $ git clone https://github.com/username/AudioPhile-ECommerce-Website.git
+   $ git clone https://github.com/SahilsPatil/AudioPhile-ECommerce-Website.git
 
 
 2. Open `index.html` in your web browser
